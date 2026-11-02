@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sowmya | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: white;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 18px 8%;
+            background: #111a30;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        header h2 {
+            color: #8b9cff;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #8b9cff;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 120px 10% 60px;
+            scroll-margin-top: 60px;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background: linear-gradient(120deg, #0b1020, #202d55);
+        }
+
+        .home h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .home h1 span {
+            color: #8b9cff;
+        }
+
+        .home p {
+            font-size: 20px;
+            color: #c6cce0;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #788bff;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            margin: 8px 5px 8px 0;
+        }
+
+        .btn:hover {
+            background: #5368e8;
+        }
+
+        h2.title {
+            font-size: 35px;
+            color: #8b9cff;
+            margin-bottom: 25px;
+        }
+
+        .content {
+            max-width: 850px;
+            line-height: 1.8;
+            font-size: 17px;
+            color: #d5d9e8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #18233d;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #34436b;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #8b9cff;
+        }
+
+        .card h3 {
+            color: #9eaeff;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #d5d9e8;
+            line-height: 1.6;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skills span {
+            background: #26365d;
+            padding: 12px 22px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            background: #18233d;
+            color: white;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111a30;
+            color: #c6cce0;
+        }
+
+        @media(max-width: 750px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .home h1 {
+                font-size: 35px;
+            }
+
+            section {
+                padding: 150px 7% 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Sowmya.</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+    <h1>Hello, I'm <span>Sowmya</span></h1>
+    <p>Computer Science Engineering Student</p>
+    <p>Passionate about learning technology and building creative projects.</p>
+
+    <a href="#about" class="btn">Explore More</a>
+    <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="content">
+        <p>
+            I am Sowmya, a Computer Science Engineering student.
+            I am interested in technology, programming and web development.
+            I enjoy learning new skills and improving my knowledge.
+            My goal is to become a successful software engineer.
+        </p>
+        <br>
+        <p><b>Education:</b> Bachelor of Engineering – Computer Science</p>
+        <p><b>Location:</b> Mangalore, Karnataka</p>
+        <p><b>Career Goal:</b> Software Engineer</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="title">My Skills</h2>
+
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Java</span>
+        <span>C Programming</span>
+        <span>SQL</span>
+        <span>GitHub</span>
+        <span>Communication</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="title">My Projects</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>LifeLink – Blood Donation System</h3>
+            <p>
+                A web-based platform that helps people find blood donors
+                during emergencies and connect with donors.
+            </p>
+            <br>
+            <a href="https://sowmyasundarapataje.github.io/BLOOD-DONATION-SYSTEM/"
+               target="_blank" class="btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Personal Portfolio</h3>
+            <p>
+                A responsive website to display my personal details,
+                skills, projects and achievements.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>
+                Practising HTML, CSS and JavaScript by creating
+                interactive web pages.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+    <h2 class="title">Achievements & Goals</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Academic Learning</h3>
+            <p>Continuously learning programming and computer science concepts.</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Development</h3>
+            <p>Developed a LifeLink Blood Donation System project.</p>
+        </div>
+
+        <div class="card">
+            <h3>Future Goal</h3>
+            <p>Become a skilled software engineer and build useful applications.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <div class="content">
+        <p>Feel free to contact me for collaboration and opportunities.</p>
+
+        <form onsubmit="sendMessage(event)">
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+            <textarea id="message" placeholder="Write Your Message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <p>Email: Add your email address here</p>
+        <p>GitHub: Sowmya's GitHub Profile</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Sowmya | Personal Portfolio Website</p>
+</footer>
+
+<script>
+    function sendMessage(event) {
+        event.preventDefault();
+
+        alert("Thank you! Your message has been entered successfully.");
+
+        document.querySelector("form").reset();
+    }
+</script>
+
+</body>
+</html>
